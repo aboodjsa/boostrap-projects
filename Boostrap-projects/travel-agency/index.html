@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safari Adventures Kenya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Hero Section Background */
+    .hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" width="35" height="25" class="me-2">
+        Safari Adventures Kenya
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#Hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#safaris">Safaris</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Packages">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="Hero" class="hero">
+    <div>
+      <h1 class="display-4 fw-bold">Discover the Heart of Africa</h1>
+      <p class="lead mb-4">Experience Kenya’s breathtaking safaris, wildlife, and culture.</p>
+      <a href="#contact" class="btn btn-light btn-lg">Book Your Safari</a>
+    </div>
+  </section>
+
+  <!-- Popular Safaris -->
+  <section  id="safaris" "class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Top Safari Destinations</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="masaai maraa.jpg" class="card-img-top" alt="Masai Mara">
+            <div class="card-body">
+              <h5 class="card-title">Masai Mara</h5>
+              <p class="card-text">Witness the Great Migration and see lions, elephants, and giraffes in their natural home.</p>
+              <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="amboseli-national-park.jpg" class="card-img-top" alt="Amboseli">
+            <div class="card-body">
+              <h5 class="card-title">Amboseli National Park</h5>
+              <p class="card-text">Enjoy close-up views of elephants with Mount Kilimanjaro as a majestic backdrop.</p>
+              <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="diani.jpg" class="card-img-top" alt="Diani Beach">
+            <div class="card-body">
+              <h5 class="card-title">Diani Beach</h5>
+              <p class="card-text">Relax by the Indian Ocean — white sands, blue waters, and tropical beauty.</p>
+              <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section  id="Packages" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Safari Packages</h2>
+      <div class="accordion col-md-8 mx-auto" id="toursAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tour1">
+              Classic Kenya Safari
+            </button>
+          </h2>
+          <div id="tour1" class="accordion-collapse collapse show" data-bs-parent="#toursAccordion">
+            <div class="accordion-body">
+              A 7-day adventure through Masai Mara, Lake Nakuru, and Amboseli. Witness Kenya’s finest wildlife.  
+              <a href="#" class="text-success fw-bold">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour2">
+              Coast & Safari Experience
+            </button>
+          </h2>
+          <div id="tour2" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+            <div class="accordion-body">
+              Combine the thrill of the savanna with the calm of the coast — explore Nairobi, Tsavo, and Diani Beach.  
+              <a href="#" class="text-success fw-bold">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour3">
+              Mt. Kenya & Wilderness Trail
+            </button>
+          </h2>
+          <div id="tour3" class="accordion-collapse collapse" data-bs-parent="#toursAccordion">
+            <div class="accordion-body">
+              Hike the slopes of Mount Kenya and enjoy the wild serenity of Samburu. Perfect for explorers.  
+              <a href="#" class="text-success fw-bold">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section  id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Book Your Safari</h2>
+      <form class="col-md-8 mx-auto">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Preferred Destination">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button class="btn btn-success w-100">Send Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-3">
+    <p class="mb-0">
+      © 2025 Safari Adventures Kenya | Designed by Abood Jamal Salim 🇰🇪  
+      <br>Follow us on 
+      <a href="#" class="text-white mx-1">Facebook</a> |
+      <a href="#" class="text-white mx-1">Instagram</a> |
+      <a href="#" class="text-white mx-1">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
